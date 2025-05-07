@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruba Khan - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="contact-section">
+        <nav class="nav">
+            <button class="nav-toggle">☰</button>
+            <div>
+                <a href="index.html">RUBA KHAN</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </nav> 
+        <div class="contact-content">
+            <h1 class="contact-heading">Contact</h1>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:rubak989@gmail.com" class="contact-link">rubak989@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Phone</span>
+                    <a href="tel:+1234567890" class="contact-link">9156668446</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/ruba-khan-704a53319/" target="_blank" class="contact-link">linkedin.com/in/rubakhan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js" onerror="console.error('Failed to load script.js. Check the file path or name.');"></script>
+    <script>
+        // Log viewport width to confirm media query
+        console.log('Viewport width:', window.innerWidth, 'px');
+        window.addEventListener('resize', () => {
+            console.log('Viewport resized to:', window.innerWidth, 'px');
+        });
+
+        // Fallback to confirm script load status
+        if (typeof document.querySelector('.nav-toggle') !== 'undefined') {
+            console.log('Inline script: DOM is accessible, checking for script.js functionality...');
+        } else {
+            console.error('Inline script: DOM is not accessible, there might be a larger issue.');
+        }
+    </script>
+</body>
+</html>
